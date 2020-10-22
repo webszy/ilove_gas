@@ -45,8 +45,21 @@
   color: #000;
   font-size: 12px;
 }
-/* .head .user{
+.head .user{
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-} */
+  box-sizing: border-box;
+  padding: 30rpx;
+  position: relative;
+}
+.head .user text{
+  margin-left: 20rpx;
+  margin-right: 10rpx;
+}
+.head .user icon{
+  position: absolute;
+  left:100rpx;
+  top:0;
+  font-size: 50rpx;
+}

@@ -5,14 +5,15 @@
       <button class="" wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 点击登录 </button>
       <block  wx:else>
        <view class="user">
-        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
         <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+        <icon class="iconfont icon-ic_userlevel_"></icon>
        </view> 
     </block>
     </view>
   </view>
 
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <view class="homeContent">
+    
   </view>
 </view>

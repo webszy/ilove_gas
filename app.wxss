@@ -1,6 +1,7 @@
 /**app.wxss**/
 @import "./assets/colorui/main.wxss";
 @import "./assets/colorui/icon.wxss";
+@import "./assets/iconfont.wxss";
 .container {
   height: 100%;
   display: flex;
@@ -9,3 +10,7 @@
   justify-content: space-between;
 
 } 
+.container .myIcon{
+  font-size: 14px;
+  display: block;
+}
