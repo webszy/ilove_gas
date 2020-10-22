@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/home/index",
+    "pages/chart/index",
+    "pages/mine/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "爱老虎油",
+    "navigationBarTextStyle": "black",
+    "navigationStyle":"custom"
+  },
+  "usingComponents": {
+    "cu-custom":"./assets/colorui/components/cu-custom"
+},
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "首页",
+        "iconPath":"./assets/icons/gasoline.png",
+        "selectedIconPath": "./assets/icons/gasoline_s.png",
+        "selectedColor": "#07c160"
+      },
+      {
+        "pagePath": "pages/chart/index",
+        "text": "统计",
+        "iconPath":"./assets/icons/chart.png",
+        "selectedIconPath": "./assets/icons/chart_s.png",
+        "selectedColor": "#07c160"
+      },
+      {
+        "pagePath": "pages/mine/index",
+        "text": "我的",
+        "iconPath":"./assets/icons/mine.png",
+        "selectedIconPath": "./assets/icons/mine_s.png",
+        "selectedColor": "#07c160"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
