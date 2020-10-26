@@ -51,7 +51,18 @@
   align-items: center;
   box-sizing: border-box;
   padding: 30rpx;
+  padding-bottom: 10rpx;
   position: relative;
+}
+.head .user:after{
+  content: '';
+  display: block;
+  width: 90%;
+  height: 1px;
+  background-color: #f0f0f0;
+  position: absolute;
+  left:5%;
+  bottom: 0;
 }
 .head .user text{
   margin-left: 20rpx;
@@ -62,4 +73,17 @@
   left:100rpx;
   top:0;
   font-size: 50rpx;
+}
+.head .gasInfo{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.head .infoItem{
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

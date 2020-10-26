@@ -8,7 +8,21 @@
         <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
         <text class="userinfo-nickname">{{userInfo.nickName}}</text>
         <icon class="iconfont icon-ic_userlevel_"></icon>
-       </view> 
+       </view>
+       <view class="gasInfo">
+        <view class="infoItem">
+          <view>近期油耗</view>
+          <view>{{gasCostAvg}}</view>
+        </view>
+        <view class="infoItem">
+          <view>加油次数</view>
+          <view>{{gasCostAvg}}</view>
+        </view>
+        <view class="infoItem">
+          <view>近期里程</view>
+          <view>{{gasCostAvg}}</view>
+        </view>
+       </view>
     </block>
     </view>
   </view>
