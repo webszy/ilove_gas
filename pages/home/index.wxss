@@ -2,27 +2,35 @@
 .usermotto {
   margin-top: 200px;
 }
+.container{
+  width: 100%;
+  height: 100%;
+}
 .head{
   width: 100%;
   height: 300rpx;
   background:linear-gradient(226deg,rgba(101,238,222,1) 0%,rgba(110,203,255,1) 100%);
   border-radius: 100% 100% 100% 100% / 0% 0% 40% 40%;
-  position: relative;
 }
-.head .info{
-  width: 70%;
-  height: 200rpx;
-  background: #fff;
+.homeContent{
+  width: 100%;
+  height: 100%;
   position: absolute;
-  bottom: 0;
-  left:50%;
-  transform: translate(-50%,50%);
-  border-radius: 10rpx;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
+  left:0;
+  top:0;
+  background: transparent;
+  box-sizing: border-box;
+  padding-top: 170rpx;
 }
-.head .info button{
+.homeContent .info{
+  width: 70%;
+  /* height: 200rpx; */
+  background: #fff;
+  border-radius: 10rpx;
+  padding:20rpx;
+  margin: 0 auto;
+}
+.homeContent .info button{
   width: 100%;
   height: 100%;
   display: flex;
@@ -31,7 +39,7 @@
   align-items: center;
   font-size: 30rpx;
 }
-.head .info .button-hover{
+.homeContent .info .button-hover{
   color:#333;
   background-color: #fff;
 }
@@ -45,16 +53,16 @@
   color: #000;
   font-size: 12px;
 }
-.head .user{
+.homeContent .user{
   display: flex;
   justify-content: flex-start;
   align-items: center;
   box-sizing: border-box;
-  padding: 30rpx;
-  padding-bottom: 10rpx;
+  padding-bottom: 20rpx;
+  padding-left: 5%;
   position: relative;
 }
-.head .user:after{
+.homeContent .user:after{
   content: '';
   display: block;
   width: 90%;
@@ -64,26 +72,42 @@
   left:5%;
   bottom: 0;
 }
-.head .user text{
-  margin-left: 20rpx;
-  margin-right: 10rpx;
+.homeContent .user text{
+  margin-left: 25rpx;
+  margin-top: 20rpx;
 }
-.head .user icon{
+.homeContent .user icon{
   position: absolute;
-  left:100rpx;
-  top:0;
+  left:calc(5% + 70rpx);
+  top:-15rpx;
   font-size: 50rpx;
 }
-.head .gasInfo{
+.homeContent .user .auto{
+  left:auto;
+  right:50rpx;
+  top:-10rpx;
+  font-size: 120rpx;
+}
+.homeContent .gasInfo{
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 10rpx;
 }
-.head .infoItem{
+.homeContent .infoItem{
   width: 33%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.homeContent .list{
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 40rpx;
+  background: #fff;
+}
+.homeContent .item{
+  display: flex;
 }

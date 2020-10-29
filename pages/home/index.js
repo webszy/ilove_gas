@@ -7,7 +7,8 @@ Page({
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    gasCostAvg:0
+    gasCostAvg:0,
+    autoType:1 //汽车类型：1轿车 2suv
   },
   //事件处理函数
   bindViewTap: function() {

@@ -3,12 +3,12 @@
 @import "./assets/colorui/icon.wxss";
 @import "./assets/iconfont.wxss";
 .container {
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-
 } 
 .container .myIcon{
   font-size: 14px;

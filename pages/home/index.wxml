@@ -1,6 +1,8 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="head">
+  <view class="head"></view>
+
+  <view class="homeContent">
     <view class="info shadow-cyan">
       <button class="" wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 点击登录 </button>
       <block  wx:else>
@@ -8,6 +10,7 @@
         <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
         <text class="userinfo-nickname">{{userInfo.nickName}}</text>
         <icon class="iconfont icon-ic_userlevel_"></icon>
+        <icon class="{{autoType===1?'iconfont icon-jiaocheqiche auto':'iconfont icon-suv auto'}}" ></icon>
        </view>
        <view class="gasInfo">
         <view class="infoItem">
@@ -23,11 +26,16 @@
           <view>{{gasCostAvg}}</view>
         </view>
        </view>
-    </block>
+      </block>
     </view>
-  </view>
-
-  <view class="homeContent">
-    
+    <view class="list">
+      <view class="item">
+        <view>时间</view>
+        <view>金额</view>
+        <view>加油</view>
+        <view>操作</view>
+      </view>
+    </view>
+   
   </view>
 </view>
